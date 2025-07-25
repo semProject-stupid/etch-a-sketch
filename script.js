@@ -4,10 +4,15 @@ const resetButton = document.querySelector("#reset");
 const newButton = document.querySelector("#new");
 
 function deleteGrids() {
-    
+    const gridList = document.querySelectorAll(".grid");
+    gridList.forEach(grid => {
+        grid.remove();
+    })
 }
 
 function createNew() {
+    //clearing existing grid elements
+    deleteGrids();
     //setting up the grid
     let userChoice = prompt ("Enter the size of grid you would like in your sketchpad: (min 1 and max 100)");
     while(userChoice > 100 || userChoice <= 0) {
