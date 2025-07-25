@@ -13,8 +13,8 @@ html {
 
 body {
     border: 2px solid black;
-    width: 0;
-    height: 0;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
 }
 
